@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 const noteDetail = () =>
 {
     const router = useRouter();
-    const { id } = router.query;
-    console.log(router.query);
+    const { params } = router.query;
+    console.log(params);
     return (
         <div>
-            spectific note - {id }
+            spectific note
         </div>
     );
 };
