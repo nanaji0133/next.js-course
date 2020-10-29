@@ -1,16 +1,13 @@
-import Link from "next/link";
 import React from 'react';
+import style from "../styles/index.module.css";
 
 const Index = () =>
 {
   return (
-    <div>
-      <h1>Index Page</h1>
-      <Link href="/notes">
-        <a>
-          notes
-        </a>
-      </Link>
+    <div className={ style.indexContainer }>
+      <div className={style.headingContainer}>
+        <h1>This is a really dope note taking app.</h1>
+      </div>
     </div>
   );
 };

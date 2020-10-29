@@ -1,0 +1,16 @@
+.indexContainer {
+  /* margin-top: 100px; */
+  height: calc(100vh - 60px);
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.headingContainer h1 {
+  font-size: 30px;
+}

@@ -1,5 +1,6 @@
 
 import "bootstrap/dist/css/bootstrap.css";
+import Nav from "../src/components/Nav";
 import '../styles/globals.css';
 
 
@@ -7,7 +8,10 @@ import '../styles/globals.css';
 function MyApp ({ Component, pageProps })
 {
   return (
-    <Component { ...pageProps } />
+    <div>
+      <Nav />
+      <Component { ...pageProps } />
+    </div>
   );
 }
 
