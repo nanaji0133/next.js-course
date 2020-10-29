@@ -6,12 +6,12 @@ const notes = () =>
 {
     const notes = new Array(15).fill(1).map((e, i) => ({ id: i, title: `Notes: ${i}` }));
     return (
-        <div>
-            <h1>My Notes</h1>
+        <div className={style.notesApp}>
+            <h1 className="text-center">My Notes</h1>
             <div className={ style.myNotes }>
                 { notes.map(note =>
                     (
-                        <div key={ note.id }>
+                        <div key={ note.id } className={style.note}>
                             <Link href="notes/[id]" as={ `notes/${note.id}` }>
                                 <a>
                                     { note.title }
