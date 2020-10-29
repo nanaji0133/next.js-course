@@ -1,5 +1,6 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
-
+import React from 'react';
 
 const noteDetail = () =>
 {
@@ -7,8 +8,14 @@ const noteDetail = () =>
     const { id } = router.query;
     console.log(id);
     return (
-        <div>
+        <div className="container">
             spectific note - {id }
+            <div className="">
+                programmtic routing:-
+            <button onClick={ e => router.push("/") }>
+                    Home page
+            </button>
+            </div>
         </div>
     );
 };
